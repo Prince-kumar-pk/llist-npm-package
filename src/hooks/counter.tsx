@@ -1,16 +1,17 @@
-import * as React from 'react'
-import { useState } from 'react'
+import { useState } from 'react';
 
 const useCounter = () => {
-    const [count,setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-    const increment = ()=>{
+    const increment = () => {
         setCount(count + 1);
     };
-    const decerement = ()=>{
+
+    const decrement = () => {
         setCount(count - 1);
     };
-  return {count, increment,decerement}
-}
 
-export default useCounter
+    return { count, increment, decrement };
+};
+
+export default useCounter; // Export the hook as default
