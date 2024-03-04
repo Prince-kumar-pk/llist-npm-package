@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useState } from 'react'
 
-const Usecounter = () => {
+const useCounter = () => {
     const [count,setCount] = useState(0);
 
     const increment = ()=>{
@@ -13,4 +13,4 @@ const Usecounter = () => {
   return {count, increment,decerement}
 }
 
-export default Usecounter
+export default useCounter
